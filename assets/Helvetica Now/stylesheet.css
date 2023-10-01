@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 300;
+    font-style: normal;
+    src: url('helveticanowdisplay-light-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 300;
+    font-style: italic;
+    src: url('helveticanowdisplay-lightitalic-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-lightitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 400;
+    font-style: normal;
+    src: url('helveticanowdisplay-regular-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 400;
+    font-style: italic;
+    src: url('helveticanowdisplay-italic-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 500;
+    font-style: normal;
+    src: url('helveticanowdisplay-medium-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 500;
+    font-style: italic;
+    src: url('helveticanowdisplay-mediumitalic-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-mediumitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 700;
+    font-style: normal;
+    src: url('helveticanowdisplay-bold-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 700;
+    font-style: italic;
+    src: url('helveticanowdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-bolditalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 900;
+    font-style: normal;
+    src: url('helveticanowdisplay-black-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-black-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Now';
+    font-weight: 900;
+    font-style: italic;
+    src: url('helveticanowdisplay-blackitalic-webfont.woff2') format('woff2'),
+         url('helveticanowdisplay-blackitalic-webfont.woff') format('woff');
+}
