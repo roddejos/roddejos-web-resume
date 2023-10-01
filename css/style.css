@@ -297,12 +297,19 @@ header {
   transform: rotate(135deg);
 }
 
+#plus-toggle3:checked ~ .plus-toggle > svg  {
+  transform: rotate(135deg);
+}
 
 #plus-toggle:checked ~ .hide ul  {
   display: unset;
 }
 
 #plus-toggle2:checked ~ .hide ul  {
+  display: unset;
+}
+
+#plus-toggle3:checked ~ .hide ul  {
   display: unset;
 }
 
@@ -316,12 +323,25 @@ header {
 
 .reveal {
   position: relative;
-  transform: translateY(50px);
+  transform: translateX(-50px);
   transition: all 0.5s ease-in-out;
   opacity: 0;
 }
 
 .reveal.active {
+  transform: translateY(0px);
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.reveal-up {
+  position: relative;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.reveal-up.active {
   transform: translateY(0px);
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -346,7 +366,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 3em;
-  text-align: left;
+  text-align: center;
   border: 1px solid var(--dark-gray);
   border-radius: 2em;
 
@@ -360,20 +380,17 @@ header {
 }
 
 
-
 /* OBJECTIVE */
 
 .objective-wrapper {
   min-height: 100vh;
   background-color: var(--dark-gray);
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .objective-content {
+  margin: auto;
   width: 75%;
-
 }
 
 .objective-content p {
@@ -512,7 +529,16 @@ header {
 
 }
 
+.cursor-hover{
+  background-color: #fff;
+  height: 120px;
+  width: 120px;
+}
 
+.cursor-click {
+  height: 70px;
+  width: 70px;
+}
 
 
 /* /////////////////////////////////////////////// */

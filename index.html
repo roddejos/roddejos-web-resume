@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
         <script defer src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script defer src="script.js"></script>
-        <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+        <!-- <script type="text/javascript" src="//w.24timezones.com/l.js" async></script> -->
 
     </head>
     <body>
@@ -20,10 +20,10 @@
             <nav class="nav-bar">
                 <ul class="nav-list container">
                     <div class="left">
-                        <li class="nav-item"><a href="#hero" class="my-name">Rod Dejos</a></li>
+                        <li class="nav-item"><a href="#hero" class="my-name link-hover">Rod Dejos</a></li>
                         <li class="nav-item">
                             <ul class="role-list">
-                                <li><a href="#">Front-End Dev / Designer</a></li>
+                                <li><a>Front-End Dev / Designer</a></li>
                                 <!-- <li><a href="#">Designer</a></li>
                                 <li><a href="#">Artist</a></li> -->
                             </ul>
@@ -36,8 +36,8 @@
                     </div>
                     
                     <div class="right">
-                        <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="link-hover" href="#about">About</a></li>
+                        <li class="nav-item"><a class="link-hover" href="#contact">Contact</a></li>
                     </div>
                 </ul>
             </nav>
@@ -89,7 +89,7 @@
                         </div>
 
                         <!-- X TOGGLE -->
-                        <label class="plus-toggle" for="plus-toggle"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
+                        <label class="plus-toggle link-hover" for="plus-toggle"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
                             <path d="M142 0H158V300H142V0Z" fill="#141414"/>
                             <path d="M300 142V158L0 158L6.99383e-07 142L300 142Z" fill="#141414"/>
                             </svg>
@@ -115,12 +115,47 @@
                         </div>
 
                         <!-- X TOGGLE -->
-                        <label class="plus-toggle" for="plus-toggle2"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
+                        <label class="plus-toggle link-hover" for="plus-toggle2"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
                             <path d="M142 0H158V300H142V0Z" fill="#141414"/>
                             <path d="M300 142V158L0 158L6.99383e-07 142L300 142Z" fill="#141414"/>
                             </svg>
                         </label>
-                        
+                    </div>
+                    <hr>
+
+                    <div class="big-line flex-space-bet flex-align-top reveal">
+                        <input type="checkbox" id="plus-toggle3" name="plus-toggle">
+
+                        <div class="hide">
+                            <div class="left flex-align-bottom">
+                                <h1 class="about__big-text exp-title">Seminars/Certs</h1> <h2 class="exp-year">2022</h2>
+                            </div>
+                            <ul class="big-text__desc">
+                                <li><p><br></p></li>
+                                <li><p><strong>Keygen: Unlocking New Potentials of Young IT Enthusiasts</strong></p></li>
+                                <li><p> • Fundamentals of Graphic Designing, Photoshop 101</p></li>
+                                <br>
+                                <li><p><strong>AWS Fundamentals</strong></p></li>
+                                <li><p> • Amazon Web Services Fundamentals with Ralph Quisumbing</p></li>
+                                <br>
+                                <li><p><strong>Grit In Times Of Pandemic Schooling</strong></p></li>
+                                <li><p> • Human Firewall 101, Python 101</p></li>
+                                <br>
+                                <li><p><strong>Foundations of User Experience (UX) Design</strong></p></li>
+                                <li><p> • Coursera Google UX Design Professional</p></li>
+                                <br>
+                                <li><p><strong>Responsive Web Design</strong></p></li>
+                                <li><p> • freeCodeCamp Developer Certification</p></li>
+
+                            </ul>
+                        </div>
+
+                        <!-- X TOGGLE -->
+                        <label class="plus-toggle link-hover" for="plus-toggle3"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
+                            <path d="M142 0H158V300H142V0Z" fill="#141414"/>
+                            <path d="M300 142V158L0 158L6.99383e-07 142L300 142Z" fill="#141414"/>
+                            </svg>
+                        </label>
                     </div>
                     <hr>
 
@@ -129,11 +164,9 @@
                         <div class="skills reveal">
                             <div class="skills__row">
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>HTML</h2>
                                 </div>
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>CSS</h2>
                                 </div>
                             </div>
@@ -144,7 +177,6 @@
                                 </div>
     
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>Python</h2>
                                 </div>
                             </div>
@@ -155,7 +187,6 @@
                                 </div>
     
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>Figma / Xd</h2>
                                 </div>
                             </div>
@@ -166,7 +197,6 @@
                                 </div>
     
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>Illustrator</h2>
                                 </div>
                             </div>
@@ -177,14 +207,13 @@
                                 </div>
     
                                 <div class="skills__item">
-                                    <div class="icon"></div>
                                     <h2>Troubleshooting</h2>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <!-- <hr> -->
+                    <hr>
                     
 
                 </div>
@@ -193,7 +222,8 @@
 
 
         <section class="objective-wrapper" id="objective">
-            <div class="objective-content container reveal">
+            
+            <div class="objective-content container reveal-up">
                 <p>
                     <span class="gradient-text">Career Objective:</span>
                     <span>Seeking</span>
@@ -228,6 +258,7 @@
                 </p>
             </div>
         </section>
+        
 
         <section class="stripe-dark">   
         </section>
