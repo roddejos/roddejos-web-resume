@@ -206,6 +206,13 @@ header {
   opacity: 0.5;
 }
 
+.scroll-thing > span {
+  display: none;
+}
+
+.scroll-thing > img:hover ~ span{
+  display: unset;
+}
 
 /* ABOUT SECTION */
 .about-wrapper {
@@ -420,7 +427,9 @@ header {
 .objective-content span:hover {
   opacity: 1;
   transition: all 0.2s ease-in-out;
+  text-shadow: #dadada7a 0 0 10px;
 }
+
 
 
 
