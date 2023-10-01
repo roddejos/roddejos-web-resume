@@ -59,19 +59,6 @@ function revealUp(){
 
 
 // HOVER EFFECT
-// const elements = document.querySelectorAll('.hover-gradient-text');
-// const newClass = 'gradient-text';
-
-// elements.forEach(element => {
-//   element.addEventListener('mouseover', () => {
-//     element.classList.add(newClass);
-//   });
-
-//   element.addEventListener('mouseout', () => {
-//     element.classList.remove(newClass);
-//   });
-// })
-
 const elements = document.querySelectorAll('.cursor2');
 const links = document.querySelectorAll('.link-hover');
 const hoverClass = 'cursor-hover';
