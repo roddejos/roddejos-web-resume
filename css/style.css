@@ -110,11 +110,8 @@ header {
   
 }
 
-.clock {
-  text-align: center;
-  justify-self: center;
-  width: 100%;
-  text-transform: uppercase;
+.clock24 {
+  color: var(--text-light-gray);
 }
 
 
