@@ -69,14 +69,14 @@ header {
   transition:  3s ease-out;
 }
 
-.nav-list a:not(.role-list a):hover {
+.nav-list a:not(.role):hover {
   text-shadow: var(--text-light-gray) 0px 0px 10px;
   transition:  0.2s ease-in;
   cursor:none;
   text-decoration: underline;
 }
 
-.nav-list a:not(.role-list a):active {
+.nav-list a:not(.role):active {
   text-shadow: var(--text-light-gray) 0px 0px 40px;
   transition:  0.2s ease-in;
 }
@@ -100,15 +100,15 @@ header {
 }
 
 
-.role-list a {
+.role {
   cursor:none;
   transition: 1ms, ease-in;
 }
 
-.role-list li:hover a::before{
+.role:hover::before{
   content: "ASPIRING ";
   font-style: italic;
-  
+
 }
 
 
