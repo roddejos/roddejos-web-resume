@@ -1,7 +1,7 @@
 :root {
   --dark-gray: #141414;
   --light-gray: #e6e5e3;
-  --text-light-gray: #dadadacb;
+  --text-light-gray: #dadada;
   --bit-dark-gray: #505050;
 
   scroll-behavior: smooth;
@@ -160,7 +160,7 @@ header {
 }
 
 .gradient-text {
-  background: linear-gradient(45deg, #fdff77, #ce78ff, #709eff, #FF6AB9, #FF7555);
+  background: linear-gradient(45deg, #FF7555, #E278FF, #F8FF6A, #22E9F1, #ff6a83, #84FF8E);
   background-size: 1000% 1000%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -169,7 +169,7 @@ header {
 }
 
 .gradient-effect {
-  background: linear-gradient(45deg, #fdff77, #ce78ff, #709eff, #FF6AB9, #FF7555);
+  background: linear-gradient(45deg, #FF7555, #E278FF, #F8FF6A, #22E9F1, #ff6a83, #84FF8E);
   background-size: 1000% 1000%;
   animation: GradientBackground 8s ease infinite;
 }
@@ -190,7 +190,21 @@ header {
   display: none;
 }
 
+.scroll-thing {
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+}
 
+.scroll-thing > img {
+  height: 4em;
+  opacity: 0.5;
+}
 
 
 /* ABOUT SECTION */
@@ -255,7 +269,7 @@ header {
 }
 
 .toggle-icon:hover {
-  cursor:crosshair;
+  cursor:none;
 
 }
 
@@ -529,7 +543,7 @@ header {
 
 }
 
-.cursor-hover{
+.cursor2.cursor-hover{
   background-color: #fff;
   height: 120px;
   width: 120px;
