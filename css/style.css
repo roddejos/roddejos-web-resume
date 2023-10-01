@@ -489,7 +489,7 @@ header {
   width: 100%;
 }
 
-.char-ref h2, .char-ref, span{
+.char-ref h2, .char-ref span{
   font-size: 1em;
   text-transform: uppercase;
 }
