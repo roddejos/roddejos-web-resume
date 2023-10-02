@@ -96,7 +96,7 @@ header {
 }
 
 .my-name {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 
@@ -194,13 +194,9 @@ header {
   opacity: 0.5;
 }
 
-.scroll-thing > span {
-  display: none;
-}
 
-.scroll-thing > img:hover ~ span{
-  display: unset;
-}
+
+
 
 /* ABOUT SECTION */
 .about-wrapper {
@@ -209,7 +205,7 @@ header {
 }
 
 .about-content {
-  padding-top: 15vh;
+  padding-top: 10vh;
   margin: auto;
 }
 
@@ -382,6 +378,8 @@ header {
 
 .skills__item h2 {
   font-weight: 500;
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .skills__row {
@@ -398,6 +396,7 @@ header {
   min-height: 100vh;
   background-color: var(--light-gray);
   display: flex;
+  padding: auto;
 }
 
 .objective-content {
@@ -410,6 +409,7 @@ header {
 .objective-content p {
   font-family: 'DM Serif Display', serif;
   font-size: 4em;
+  margin: auto;
 }
 
 .objective-content span:not(:first-of-type) {
@@ -426,21 +426,61 @@ header {
 
 
 
-/* CONTACT SECTION */
+/* CONTACT */
 .contact-wrapper {
   height: 100vh;
+  padding-top: 5em;
+  padding-bottom: 2em;
   background-color: var(--dark-gray);
 }
 
 .contact-content {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  height: 100vh;
-  padding: 5em 0;
+  gap: 1em;
 }
 
-.contact-wrapper h1 {
-  font-size: 6em;
+.contact-content .left, .contact-content .right {
+  height: 100%;
+}
+
+.contact-content h1{
+  font-size: 6rem;
+}
+
+.contact-link h1{
+  color: #00000000;
+  -webkit-text-stroke: 1px var(--text-light-gray);
+}
+
+.contact-content hr{
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.contact-content a {
+  color: var(--text-light-gray);
+}
+
+.contact-content .right {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-content .right svg {
+  width: 4em;
+  height: 4em;
+  transition: all 0.3s;
+}
+
+.contact-link-container, .more-info {
+  width: 100%;
+}
+
+.more-info {
+  align-self: flex-end;
 }
 
 .contact-link {
@@ -448,51 +488,50 @@ header {
   align-items: center;
 }
 
-.contact-link a {
-  font-size: 6em;
-  color: var(--text-light-gray);
-  background-color: #22eaf100;
-  width: 100%;
-  z-index: 99;
-}
-
-.contact-link a:hover {
-  text-shadow: #dadada7a 0 0 10px;
+.contact-link:hover {
   cursor: none;
 }
 
-.contact-link svg {
-  height: 4em;
-  position: absolute;
-  right: 0;
+.contact-link:hover > svg{
+  transform: rotate(90deg);
 }
 
-.flex-col{
-  flex-direction: column;
+.contact-link:hover > h1{
+  color: var(--text-light-gray);
 }
 
-.contact-content hr {
-  margin-top: -2em;
-  margin-bottom: 2em;
-}
-
-.contact-right {
-  align-self: flex-start;
-}
-
-.height-100 {
-  height: 100%;
-}
-
-.char-ref {
-  /* background-color: #22E9F1; */
+.get-container {
   width: 100%;
+  display: flex;
+  justify-content: left;
 }
 
-.char-ref h2, .char-ref span{
-  font-size: 1em;
-  text-transform: uppercase;
+.get-container svg {
+  height: 2em;
+  animation: spin 2s infinite linear;
 }
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.contact-content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
 
 
 .stripe {
@@ -505,6 +544,15 @@ header {
   height: 1em;
   background-color: var(--dark-gray);
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -585,10 +633,10 @@ header {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 999;
-
 }
 
 .cursor2.cursor-hover{
+  background-color: #fff;
   height: 120px;
   width: 120px;
 }
@@ -600,10 +648,76 @@ header {
 
 
 /* /////////////////////////////////////////////// */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+
+  body {
+    font-size: 12px;
+  }
+
+
+  /* ABOUT */
+  .about__big-text {
+    font-size: 4rem;
+  }
 
   .skills {
     flex-wrap:wrap
   }
+
+
+
+  /* OBEJCTIVE */
+  .objective-content p {
+    font-size: 4em;
+  }
+  
+  /* CONTACT */
+  .contact-content h1{
+    font-size: 4rem;
+  }
+
+  .more-info {
+    flex-direction: column;
+  }
+
+  .more-info span {
+    margin-bottom: 1em;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 700px)  {
+
+  .role {
+    display: none;
+  }
+
+
+  .objective-content {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .objective-content p {
+    font-size: 3em;
+  }
+
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-content h1{
+    font-size: 4rem;
+  }
+
+  .contact-link-container, .more-info {
+    width: 100%;
+  }
+  
+
   
 }
